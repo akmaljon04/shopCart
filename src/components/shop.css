@@ -1,0 +1,142 @@
+nav {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1d1f27;
+}
+.nav-left {
+  flex: 1;
+}
+.logo {
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(246, 185, 110);
+}
+.nav-middle {
+  color: gray;
+
+  flex: 1;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 25px;
+  background-color: white;
+}
+.input-wrapper input {
+  width: 100%;
+  padding: 0 10px;
+  border: none;
+  display: block;
+}
+.input-wrapper input:focus,
+input:active {
+  outline: none;
+}
+.nav-right {
+  flex: 1;
+}
+.cart-icon {
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-icon i {
+  cursor: pointer;
+  font-size: 30px;
+}
+.item-count {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  background-color: red;
+  z-index: 10;
+  border-radius: 50%;
+  font-size: 14px;
+  height: 20px;
+  width: 20px;
+  top: -50%;
+  right: -50%;
+}
+
+
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 1200px;
+  margin: 70px auto 0;
+  row-gap: 40px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+.productCard-wrapper {
+  width: 357px;
+  height: 530px;
+  padding: 10px;
+  border-radius: 12px;
+  margin: auto;
+  word-wrap: break-word;
+  box-shadow: 8px 8px 14px #e0dfdf, -8px -8px 14px #e2e1e1;
+}
+.product-img {
+  height: 250px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  padding: 10px;
+}
+.name {
+  font-size: 28px;
+  text-align: center;
+}
+.ProductCard-price {
+  margin: 15px;
+  width: 100px;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 120px;
+  font-weight: 650;
+  color: #f7ac4b;
+  border-bottom: 3px solid #f7ac4b;
+}
+.ProductCard-button {
+  width: 160px;
+  height: 40px;
+  position: relative;
+  left: 92px;
+  top: 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 19px;
+  font-weight: 600;
+  color: white;
+  background-color: #f1b668;
+  box-shadow: 8px 8px 14px #dad8d8, -8px -8px 14px #d4d3d3;
+}
+.ProductCard-button:hover {
+  border: 2px solid #f1b668;
+  background-color: white;
+  color: #f1b668;
+  box-shadow: none;
+  transition: 0.6s;
+}
+.ProductCard-button:active {
+  outline: auto !important;
+  background-color: #f1b668;
+  color: white;
+  transition: 1s;
+}
